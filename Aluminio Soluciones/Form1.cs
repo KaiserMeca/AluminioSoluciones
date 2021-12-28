@@ -65,7 +65,7 @@ namespace Aluminio_Soluciones
         {
             MostrarMenu(panelSubMenuPremarcos);
         }
-
+        //Button5 = Premarcos Modena;
         private void button5_Click(object sender, EventArgs e)
         {
             AbrirForm1(new Form3());
@@ -77,10 +77,10 @@ namespace Aluminio_Soluciones
             OcultarSubMenu();
         }
 
-        private void btnAberturas_Click(object sender, EventArgs e)
-        {
-            OcultarSubMenu();
-        }
+        //private void btnAberturas_Click(object sender, EventArgs e)
+        //{
+            
+        //}
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
@@ -109,10 +109,13 @@ namespace Aluminio_Soluciones
             panelFormbtn2.Tag = FormularioHijo ;
             FormularioHijo.BringToFront();
             FormularioHijo.Show();
-
-
-
                     
+        }
+
+        private void btnPostigoss_Click(object sender, EventArgs e)
+        {
+            OcultarSubMenu();
+            AbrirForm1(new Form4Postigos());
         }
     }
 }

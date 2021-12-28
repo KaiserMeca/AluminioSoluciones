@@ -37,8 +37,8 @@ namespace Aluminio_Soluciones
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnAberturas = new System.Windows.Forms.Button();
             this.panelSubMenuPremarcos = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPremarcosA30 = new System.Windows.Forms.Button();
+            this.btnPremarcosModena = new System.Windows.Forms.Button();
             this.btnPremarcos = new System.Windows.Forms.Button();
             this.panelSubMenuPresupuesto = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -79,7 +79,7 @@ namespace Aluminio_Soluciones
             this.panelSubMenuAyuda.Controls.Add(this.button8);
             this.panelSubMenuAyuda.Controls.Add(this.button9);
             this.panelSubMenuAyuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuAyuda.Location = new System.Drawing.Point(0, 480);
+            this.panelSubMenuAyuda.Location = new System.Drawing.Point(0, 486);
             this.panelSubMenuAyuda.Name = "panelSubMenuAyuda";
             this.panelSubMenuAyuda.Size = new System.Drawing.Size(200, 100);
             this.panelSubMenuAyuda.TabIndex = 7;
@@ -90,6 +90,8 @@ namespace Aluminio_Soluciones
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Info;
             this.button8.Location = new System.Drawing.Point(0, 45);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -106,6 +108,8 @@ namespace Aluminio_Soluciones
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Info;
             this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -125,7 +129,7 @@ namespace Aluminio_Soluciones
             this.btnAyuda.Location = new System.Drawing.Point(0, 435);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAyuda.Size = new System.Drawing.Size(200, 45);
+            this.btnAyuda.Size = new System.Drawing.Size(200, 51);
             this.btnAyuda.TabIndex = 6;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,53 +147,57 @@ namespace Aluminio_Soluciones
             this.btnAberturas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAberturas.Size = new System.Drawing.Size(200, 45);
             this.btnAberturas.TabIndex = 5;
-            this.btnAberturas.Text = "Aberturas";
+            this.btnAberturas.Text = "Postigos";
             this.btnAberturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAberturas.UseVisualStyleBackColor = true;
-            this.btnAberturas.Click += new System.EventHandler(this.btnAberturas_Click);
+            this.btnAberturas.Click += new System.EventHandler(this.btnPostigoss_Click);
             // 
             // panelSubMenuPremarcos
             // 
             this.panelSubMenuPremarcos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(120)))), ((int)(((byte)(38)))));
-            this.panelSubMenuPremarcos.Controls.Add(this.button4);
-            this.panelSubMenuPremarcos.Controls.Add(this.button5);
+            this.panelSubMenuPremarcos.Controls.Add(this.btnPremarcosA30);
+            this.panelSubMenuPremarcos.Controls.Add(this.btnPremarcosModena);
             this.panelSubMenuPremarcos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuPremarcos.Location = new System.Drawing.Point(0, 290);
             this.panelSubMenuPremarcos.Name = "panelSubMenuPremarcos";
             this.panelSubMenuPremarcos.Size = new System.Drawing.Size(200, 100);
             this.panelSubMenuPremarcos.TabIndex = 4;
             // 
-            // button4
+            // btnPremarcosA30
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 45);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(200, 45);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "button4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPremarcosA30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPremarcosA30.FlatAppearance.BorderSize = 0;
+            this.btnPremarcosA30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
+            this.btnPremarcosA30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPremarcosA30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremarcosA30.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnPremarcosA30.Location = new System.Drawing.Point(0, 45);
+            this.btnPremarcosA30.Name = "btnPremarcosA30";
+            this.btnPremarcosA30.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPremarcosA30.Size = new System.Drawing.Size(200, 45);
+            this.btnPremarcosA30.TabIndex = 1;
+            this.btnPremarcosA30.Text = "A30";
+            this.btnPremarcosA30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPremarcosA30.UseVisualStyleBackColor = true;
+            this.btnPremarcosA30.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnPremarcosModena
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(200, 45);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnPremarcosModena.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPremarcosModena.FlatAppearance.BorderSize = 0;
+            this.btnPremarcosModena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
+            this.btnPremarcosModena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPremarcosModena.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremarcosModena.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnPremarcosModena.Location = new System.Drawing.Point(0, 0);
+            this.btnPremarcosModena.Name = "btnPremarcosModena";
+            this.btnPremarcosModena.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPremarcosModena.Size = new System.Drawing.Size(200, 45);
+            this.btnPremarcosModena.TabIndex = 0;
+            this.btnPremarcosModena.Text = "Modena";
+            this.btnPremarcosModena.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPremarcosModena.UseVisualStyleBackColor = true;
+            this.btnPremarcosModena.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnPremarcos
             // 
@@ -224,6 +232,8 @@ namespace Aluminio_Soluciones
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Info;
             this.button3.Location = new System.Drawing.Point(0, 45);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -240,6 +250,8 @@ namespace Aluminio_Soluciones
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(30)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Info;
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -282,7 +294,7 @@ namespace Aluminio_Soluciones
             this.panelFormbtn2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelFormbtn2.Location = new System.Drawing.Point(200, 0);
             this.panelFormbtn2.Name = "panelFormbtn2";
-            this.panelFormbtn2.Size = new System.Drawing.Size(682, 671);
+            this.panelFormbtn2.Size = new System.Drawing.Size(684, 671);
             this.panelFormbtn2.TabIndex = 1;
             // 
             // pictureBox1
@@ -290,7 +302,7 @@ namespace Aluminio_Soluciones
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(63, 199);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 199);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(559, 290);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -299,9 +311,9 @@ namespace Aluminio_Soluciones
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 671);
+            this.ClientSize = new System.Drawing.Size(884, 671);
             this.Controls.Add(this.panelFormbtn2);
             this.Controls.Add(this.PanelLateralMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -330,8 +342,8 @@ namespace Aluminio_Soluciones
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnAberturas;
         private System.Windows.Forms.Panel panelSubMenuPremarcos;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPremarcosA30;
+        private System.Windows.Forms.Button btnPremarcosModena;
         private System.Windows.Forms.Button btnPremarcos;
         private System.Windows.Forms.Panel panelSubMenuPresupuesto;
         private System.Windows.Forms.Button button3;
